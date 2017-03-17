@@ -1,0 +1,141 @@
+/*============    ШРИФТИ    + БАЗА===========*/
+@font-face {
+  font-family: 'Intro';
+  src: url('fonts/Intro-Regular.eot');
+  src: url('fonts/Intro-Regular.eot?#iefix') format('embedded-opentype'), url('fonts/Intro-Regular.woff') format('woff'), url('fonts/Intro-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Uni Sans Heavy CAPS';
+  src: url('fonts/UniSansHeavyCAPS.eot');
+  src: url('fonts/UniSansHeavyCAPS.eot?#iefix') format('embedded-opentype'), url('fonts/UniSansHeavyCAPS.woff') format('woff'), url('fonts/UniSansHeavyCAPS.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+.unisans {
+  font-family: 'Uni Sans Heavy CAPS';
+}
+.intro {
+  font-family: 'Intro';
+}
+p {
+  margin: 0;
+}
+#shots_container_buy {
+  color: #143949;
+  padding-top: 100px;
+  padding-top: 150px;
+}
+#shots_container_buy #short_name_1_1 {
+  font-family: 'Intro';
+  font-size: 28px;
+  color: #aa5020;
+}
+#shots_container_buy #short_price_1_1 {
+  font-family: 'Intro';
+  font-size: 20px;
+}
+#shots_container_buy select {
+  border-radius: 5px;
+  border: 3px solid #143949;
+  padding: 3px 20px;
+  background: transparent;
+  color: #143949;
+  font-size: 20px;
+  display: inline-block;
+  margin-bottom: 5px;
+  font-family: 'Intro';
+}
+#shots_container_buy select[name="sex"] {
+  width: 220px;
+  margin-left: 20px;
+  margin-bottom: 5px;
+}
+#shots_container_buy select[name="color"] {
+  width: 214px;
+  margin-left: 20px;
+}
+#shots_container_buy select[name="sizeFF"] {
+  width: 187px;
+  margin-left: 20px;
+}
+#shots_container_buy input[name="nameFF"],
+#shots_container_buy input[name="contactFF"],
+#shots_container_buy input[name="phoneFF"] {
+  border-radius: 5px;
+  border: 3px solid #143949;
+  padding: 3px 20px;
+  background: transparent;
+  color: #143949;
+  font-size: 20px;
+  display: inline-block;
+  margin-bottom: 5px;
+  font-family: 'Intro';
+  width: 100%;
+}
+#shots_container_buy textarea {
+  background-color: #ffffff;
+  color: #143949;
+  width: 290px;
+  border-radius: 7px;
+  border: 3px solid #143949;
+  font-family: 'Intro';
+}
+#shots_container_buy [type="submit"] {
+  font-family: 'Intro';
+  border: none;
+  text-transform: uppercase;
+  border-radius: 7px;
+  background-color: #315876;
+  color: #fff;
+  width: 213px;
+  height: 52px;
+  font-size: 20px;
+  width: 290px;
+  margin-bottom: 20px;
+}
+#shots_container_buy [type="submit"]:hover {
+  background-color: #006633;
+  -moz-transition: all  0.5s 0.02s ease;
+  -o-transition: all  0.5s 0.02s ease;
+  -webkit-transition: all 0.5s 0.02s ease;
+}
+#shots_container_buy .sex_goods,
+#shots_container_buy .size_goods,
+#shots_container_buy .color_goods {
+  font-family: 'Intro';
+  font-size: 18px;
+}
+#shots_container_buy .sex_goods {
+  display: inline-block;
+}
+#shots_container_buy .size_goods {
+  display: inline-block;
+}
+#shots_container_buy .color_goods {
+  display: inline-block;
+}
+#shots_container_buy #longslive_1_2_buy {
+  background: url("../img/harley1.jpg") no-repeat top center;
+  width: 370px;
+  height: 499px;
+}
+#shots_container_buy .description_buy {
+  text-transform: uppercase;
+  font-size: 15px;
+  color: #143949;
+  font-family: 'Intro';
+}
+#shots_container_buy .description_buy .description_1_buy span {
+  text-decoration: underline;
+}
+#shots_container_buy .description_buy .material_buy_2 {
+  padding-left: 93px;
+}
+#shots_container_buy .name_goods_buy {
+  margin-bottom: 30px;
+}
+#shots_container_buy select[name="name_of_goods"] {
+  display: none;
+}

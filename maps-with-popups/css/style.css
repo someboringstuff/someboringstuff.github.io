@@ -1,0 +1,45 @@
+svg {
+    display: table-cell;
+}
+
+#tooltip-popup {
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    position: absolute;
+    width: 20%;
+    border-radius: 10px;
+    background-color: white;
+    transition: opacity 0.3s ease-in;
+    box-shadow: 1px 0px 10px grey;
+    overflow: hidden;
+    text-align: center;
+}
+
+#tooltip-popup > hr {
+    padding: 0;
+    margin: 0;
+}
+
+#tooltip-popup > h3 {
+    font-size: 1.5vw;
+    background: lightgrey;
+    color: grey;
+    width: 100%;
+    line-height: 7vh;
+    text-align: center;
+    margin: 0;
+}
+
+#tooltip-popup > p {
+    font-size: 1vw;
+    padding: 0;
+    color: silver;
+    margin: 1vh;
+}
+
+#sold {
+    fill: #027696;
+}
+
+

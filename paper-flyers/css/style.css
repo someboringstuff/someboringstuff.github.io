@@ -1,0 +1,14 @@
+body {
+	padding: 0px;
+	margin: 0px;
+}
+
+
+svg {
+	margin: 0 auto;
+  width: 500px;
+}
+
+#first,#second,#third,#fourth,#fifth {
+	opacity: 0;
+}

@@ -1,0 +1,53 @@
+/*============    ШРИФТИ    ===========*/
+@font-face {
+  font-family: 'Intro';
+  src: url('fonts/Intro-Regular.eot');
+  src: url('fonts/Intro-Regular.eot?#iefix') format('embedded-opentype'), url('fonts/Intro-Regular.woff') format('woff'), url('fonts/Intro-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Uni Sans Heavy CAPS';
+  src: url('fonts/UniSansHeavyCAPS.eot');
+  src: url('fonts/UniSansHeavyCAPS.eot?#iefix') format('embedded-opentype'), url('fonts/UniSansHeavyCAPS.woff') format('woff'), url('fonts/UniSansHeavyCAPS.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+.unisans {
+  font-family: 'Uni Sans Heavy CAPS';
+}
+.intro {
+  font-family: 'Intro';
+}
+#shots_container_collection {
+  padding-bottom: 50px;
+  padding-top: 100px;
+}
+#shots_container_collection #longslive_1_1 {
+  background: url("../img/cap1.png") no-repeat top center;
+  width: 240px;
+  height: 320px;
+}
+#shots_container_collection #longslive_1_2 {
+  background: url("../img/cup_2.png") no-repeat top center;
+  width: 240px;
+  height: 320px;
+}
+#shots_container_collection #longslive_1_3 {
+  background: url("../img/cup_3.png") no-repeat top center;
+  width: 240px;
+  height: 320px;
+}
+#shots_container_collection #longslive_1_4 {
+  background: url("../img/cup_4.png") no-repeat top center;
+  width: 240px;
+  height: 320px;
+}
+#shots_container_collection h1,
+#shots_container_collection h2 {
+  color: #143949;
+}
+#shots_container_collection h1 {
+  font-size: 42px;
+  font-family: 'Intro';
+}

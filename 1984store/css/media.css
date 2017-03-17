@@ -1,0 +1,127 @@
+@media (min-width: 321px) and (max-width: 480px) {
+  .content_1 .h2_shots {
+    margin-top: 40px;
+  }
+  .smooth_transition {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .about_us .about_us_img_1,
+  .about_us .about_us_img_2,
+  .about_us .about_us_img_3,
+  .about_us .about_us_img_4,
+  .about_us .about_us_img_5,
+  .about_us .about_us_img_6 {
+    display: block;
+    margin: 0 auto;
+  }
+  footer #feedback-form {
+    margin: 0 auto;
+  }
+  footer .footer_inf {
+    text-align: center;
+  }
+  footer .designed_by {
+    text-align: center;
+    padding-right: 0;
+  }
+  footer #feedback-form [type=submit] {
+    max-width: 100%;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .content_1 .h2_shots {
+    margin-top: 40px;
+  }
+  .smooth_transition {
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .about_us .about_us_img_1,
+  .about_us .about_us_img_2,
+  .about_us .about_us_img_3,
+  .about_us .about_us_img_4,
+  .about_us .about_us_img_5,
+  .about_us .about_us_img_6 {
+    display: block;
+    margin: 0 auto;
+  }
+  footer #feedback-form {
+    margin: 0 auto;
+  }
+  footer .footer_inf {
+    text-align: center;
+  }
+  footer .designed_by {
+    text-align: center;
+    padding-right: 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .smooth_transition {
+    margin-bottom: 20px;
+  }
+  .about_us .about_us_img_1 {
+    background: url("../img/about_us_1.png") no-repeat top 20px center;
+    width: 260px;
+    height: 260px;
+    margin-right: 10em;
+    background-color: #e5e5e5;
+    margin-bottom: 20px;
+    margin-left: 3em;
+  }
+  .about_us .about_us_img_2 {
+    background: url("../img/about_us_2.png") no-repeat top 20px center;
+    width: 260px;
+    height: 260px;
+    margin-right: 0px;
+    background-color: #e5e5e5;
+    margin-bottom: 20px;
+  }
+  .about_us .about_us_img_3 {
+    background: url("../img/about_us_3.png") no-repeat top 20px center;
+    width: 260px;
+    height: 260px;
+    background-color: #e5e5e5;
+    margin-bottom: 20px;
+    margin-right: 10em;
+    margin-left: 3em;
+  }
+  .about_us .about_us_img_4 {
+    background: url("../img/about_us_4.png") no-repeat top 20px center;
+    width: 260px;
+    height: 260px;
+    margin-right: 0px;
+    background-color: #e5e5e5;
+    margin-bottom: 20px;
+  }
+  .about_us .about_us_img_5 {
+    background: url("../img/about_us_5.png") no-repeat top 20px center;
+    width: 260px;
+    height: 260px;
+    margin-right: 10em;
+    background-color: #e5e5e5;
+    padding-left: 3px;
+    margin-bottom: 20px;
+    margin-left: 3em;
+  }
+  .about_us .about_us_img_6 {
+    background: url("../img/about_us_6.png") no-repeat top 20px center;
+    width: 260px;
+    height: 260px;
+    background-color: #e5e5e5;
+  }
+  footer #feedback-form {
+    margin: 0 auto;
+  }
+  footer .footer_inf {
+    text-align: center;
+  }
+  footer .designed_by {
+    text-align: center;
+    padding-right: 0;
+  }
+  footer .footer_phone_col {
+    margin-left: 0;
+  }
+}

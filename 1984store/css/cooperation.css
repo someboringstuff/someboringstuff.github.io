@@ -1,0 +1,52 @@
+/*============    ШРИФТИ    + БАЗА===========*/
+@font-face {
+  font-family: 'Intro';
+  src: url('../fonts/Intro-Regular.eot');
+  src: url('../fonts/Intro-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/Intro-Regular.woff') format('woff'), url('../fonts/Intro-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Uni Sans Heavy CAPS';
+  src: url('../fonts/UniSansHeavyCAPS.eot');
+  src: url('../fonts/UniSansHeavyCAPS.eot?#iefix') format('embedded-opentype'), url('../fonts/UniSansHeavyCAPS.woff') format('woff'), url('../fonts/UniSansHeavyCAPS.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+.unisans {
+  font-family: 'Uni Sans Heavy CAPS';
+}
+.intro {
+  font-family: 'Intro';
+}
+p {
+  margin: 0;
+}
+#cooperation {
+  color: #143949;
+  padding-top: 100px;
+}
+#cooperation .h2_cooperation {
+  text-transform: uppercase;
+  font-family: 'Intro';
+  font-size: 30px;
+  padding-top: 22px;
+}
+#cooperation .descrt_cooperation {
+  padding-top: 85px;
+  padding-bottom: 60px;
+  font-family: 'Intro';
+  font-size: 20px;
+  text-transform: uppercase;
+}
+#cooperation .files {
+  text-transform: uppercase;
+  font-family: 'Intro';
+  color: #143949;
+}
+#cooperation .files span {
+  line-height: 1.5;
+}
+#cooperation .row_files {
+  padding-bottom: 145px;
+}
