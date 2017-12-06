@@ -1,7 +1,6 @@
-h1 {
-    font-family: Verdana Arial;
+body {
+    text-align: center;
 }
-
 
 #first-wrapper, #second-wrapper {
     display: inline-block;
@@ -9,7 +8,7 @@ h1 {
 
 #agile-icon-wrapper, #expedient-icon-wrapper, #reliable-icon-wrapper {
     width: 150px;
-    margin: 10px;
+    margin: 40px;
     padding: 10px;
     display: block;
     border: 2px solid #eee;

@@ -178,6 +178,10 @@ setForEachHiden(showMessage);
 setForEachShow(showBerry);
 setForEachShow(showTriangle);
 
+s.attr({
+	'opacity': 1
+});
+
 
 //--------------------------------------------------------------------tree
 function fTree() {
