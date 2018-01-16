@@ -6,3 +6,7 @@ body {
 svg * {
 	transform-origin: 50% 50%;
 }
+
+#clouds {
+	transform: translateY(-500px);
+}

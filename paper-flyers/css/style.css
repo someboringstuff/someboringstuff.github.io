@@ -1,14 +1,60 @@
 body {
 	padding: 0px;
 	margin: 0px;
+	text-align: center;
 }
 
 
 svg {
-	margin: 0 auto;
-  width: 500px;
+	width: 50%;
+  	margin: 100px 100px;
 }
 
 #first,#second,#third,#fourth,#fifth {
 	opacity: 0;
+}
+
+@keyframes reveal-triangle {
+	100% {
+		transform: translateX(0px) translateY(0px) rotate(0deg) scale(1);
+		opacity: 1;
+	}
+}
+
+@keyframes reveal-words {
+	100% {
+		opacity: 1;
+	}
+}
+
+#first {
+	transform: translateX(-200px) translateY(100px) rotate(90deg);
+}
+
+#second {
+	transform: translateX(100px) translateY(100px) rotate(30deg) scale(.5);	
+}
+
+#third {
+	transform: translateX(150px) translateY(100px) rotate(30deg) scale(.5);	
+}
+
+#first {
+	animation: reveal-triangle .7s cubic-bezier(0.59, 0.01, 0.15, 1.26) forwards;
+}
+
+#second {
+	animation: reveal-triangle .7s .7s cubic-bezier(0.59, 0.01, 0.15, 1.26) forwards;
+}
+
+#third {
+	animation: reveal-triangle .7s 1.4s cubic-bezier(0.59, 0.01, 0.15, 1.26) forwards;
+}
+
+#fourth {
+	animation: reveal-words .8s 2.5s ease-out forwards;
+}
+
+#fifth {
+	animation: reveal-words .8s 3.3s ease-out forwards;
 }

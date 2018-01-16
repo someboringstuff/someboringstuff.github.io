@@ -74,15 +74,8 @@ var constantAnimations = function() {
 
 	anime({
 		targets: '#clouds',
-		translateY: [
-			{value: -10, duration: 500},
-			{value: 10, duration: 500}
-		],
-		translateX: [
-			{value: -5, duration: 300},
-			{value: 5, duration: 300}
-		],
-		direction: 'alternate',
+		translateY: [-750, 750],
+		duration: 3000,
 		loop: true,
 		easing: 'linear'
 	});
