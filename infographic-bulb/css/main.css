@@ -4,7 +4,7 @@ body {
 }
 
 svg * {
-	transform-origin: 50% 50%;
+	transform-origin: center;
 }
 
 #clouds {

@@ -47,7 +47,7 @@ var constantAnimations = function() {
 		targets: '#fire-1, #smoke-2',
 		scale: 1.3,
 		rotate: '-10deg',
-		duration: 100,
+		duration: 1000,
 		loop: true,
 		direction: 'alternate',
 		easing: 'linear'
@@ -56,7 +56,7 @@ var constantAnimations = function() {
 		targets: '#fire-2, #smoke-1',
 		scale: 1.2,
 		rotate: '10deg',
-		duration: 100,
+		duration: 1000,
 		loop: true,
 		direction: 'alternate',
 		easing: 'linear'
@@ -65,7 +65,7 @@ var constantAnimations = function() {
 		targets: '#fire-3',
 		scale: 1.1,
 		rotate: '-5deg',
-		duration: 100,
+		duration: 1000,
 		loop: true,
 		direction: 'alternate',
 		easing: 'linear'
