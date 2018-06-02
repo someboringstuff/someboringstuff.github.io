@@ -524,8 +524,7 @@
 
 <style>
 	#fire-light {
-		animation: fire-light-movement .3s ease-in-out both infinite,
-				   sky-opacity 20s ease-in-out both infinite;
+		opacity: 0;
 	}
 
 	#night-sky {
