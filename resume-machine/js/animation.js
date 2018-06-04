@@ -3,7 +3,7 @@ function moveResume() {
 		targets: "#resume-line",
 		translateX: [
 			{value: 0, duration: 0},
-			{value: 66.761, easing: 'easeOutQuad', duration: 1500}
+			{value: 66.761, easing: 'easeOutQuad', duration: 1000}
 		]
 	}
 }
@@ -13,7 +13,7 @@ function movePeople(startX, finishX) {
 		targets: "#main-people_1_",
 		translateX: [
 			{value: startX, duration: 0},
-			{value: finishX, duration: 1500, easing: 'easeOutCubic'}
+			{value: finishX, duration: 1000, easing: 'easeInOutSine'}
 		],
 		delay: 100
 	}
@@ -24,9 +24,9 @@ function dropResume(type) {
 		targets: "#resume-" + type,
 		translateY: [
 			{value: 0, duration: 0},
-			{value: 150, duration: 1000}
+			{value: 150, duration: 800}
 		],
-		easing: "easeInSine"
+		easing: [.56,.04,.84,.64]
 	}
 }
 
@@ -37,7 +37,7 @@ function turnArrow(start, finish) {
 			{value: start, duration: 0},
 			{value: finish}
 		],
-		duration: 1500,
+		duration: 800,
 		easing: [0,.06,.38,1]
 	}
 }
@@ -47,8 +47,8 @@ function turnBarHandle() {
 		targets: "#bar-handle",
 		rotate: [
 			{value: 0, duration: 0},
-			{value: 60, duration: 500, easing: "linear"},
-			{value: 0, duration: 500, easing: "linear"}
+			{value: 60, duration: 400, easing: "linear"},
+			{value: 0, duration: 400, easing: "linear"}
 		]
 	}
 }
@@ -88,6 +88,14 @@ lightsTimeline
 	duration: 1000,
 	loop: true
 })
+.add({
+	targets: '#lights circle',
+	fill: function(target) {
+		return lightsColors[anime.random(0, 2)];
+	},
+	duration: 1000,
+	loop: true
+});
 
 var start = 0, finish = 44;
 
