@@ -87,6 +87,19 @@ function horArrow(target, duration) {
 	});
 }
 
+function blinkObject(target, number) {
+	return {
+		targets: target,
+		opacity: [
+			{ value: 0.5, duration: 350},
+			{ value: 1, duration: 350}
+		],
+		easing: 'linear',
+		direction: 'alternate',
+		loop: number
+	}
+}
+
 
 
 var thirdDiagramAnimation = anime.timeline({
@@ -122,9 +135,7 @@ thirdDiagramAnimation
 
 .add(fadeInTopBottom('#enfuce-3 #step-1-bottom', 1000))
 
-.add(fadeInTopBottom('#enfuce-3 #step-1-1-bottom', 1000))
-.add(fadeInTopBottom('#enfuce-3 #step-1-2-bottom', 1000))
-.add(fadeInTopBottom('#enfuce-3 #step-1-3-bottom', 1000))
+.add(fadeInTopBottom(['#enfuce-3 #step-1-1-bottom','#enfuce-3 #step-1-2-bottom','#enfuce-3 #step-1-3-bottom'], 1000))
 
 .add({
 	targets: '#enfuce-3 #step-1-4',
@@ -166,7 +177,16 @@ thirdDiagramAnimation
 		{ value: 0, duration: 0 },
 		{ value: 1, duration: 1000 }
 	],
-	easing: 'linear'
+	easing: 'linear',
+	complete: function() {
+		anime({
+			targets: '#enfuce-3 #big-rectangle',
+			strokeDashoffset: -200,
+			duration: 10000,
+			easing: 'linear',
+			loop: true
+		});
+	}
 })
 
 
@@ -219,9 +239,8 @@ thirdDiagramAnimation
 	}
 })
 
-.add(fadeInTopBottom('#enfuce-3 #step-2-2-green-top', 1000))
+.add(fadeInTopBottom(['#enfuce-3 #step-2-2-green-top', '#enfuce-3 #step-2-3-green-top'], 1000))
 .add(fadeInLeftRight('#enfuce-3 #step-2-text-right', 1000))
-.add(fadeInTopBottom('#enfuce-3 #step-2-3-green-top', 1000))
 .add({
 	targets: '#enfuce-3 #green-boxes-up-arrow',
 	opacity: [
@@ -243,44 +262,26 @@ thirdDiagramAnimation
 		});
 	}
 })
-.add({
-	targets: '#enfuce-3 #green-boxes-up',
-	opacity: [
-		{ value: 0.5, duration: 500 },
-		{ value: 1, duration: 500 },
-		{ value: 0.5, duration: 500 },
-		{ value: 1, duration: 500 }
-	],
-	easing: 'linear',
-	direction: 'alternate'
-})
+.add(blinkObject('#enfuce-3 #green-boxes-up', 1))
 
 
 
 
 //part 3
 .add(fadeInTopBottom('#enfuce-3 #green-box-bottom'))
-.add({
-	targets: '#enfuce-3 #green-box-bottom',
-	opacity: [
-		{ value: 0.5, duration: 500 },
-		{ value: 1, duration: 500 },
-		{ value: 0.5, duration: 500 },
-		{ value: 1, duration: 500 }
-	],
-	easing: 'linear',
-	direction: 'alternate'
-})
-.add(fadeInTopBottom('#enfuce-3 #step-3-1-bottom', 1000))
-.add(fadeInTopBottom('#enfuce-3 #step-3-2-bottom', 1000))
-.add(fadeInTopBottom('#enfuce-3 #step-3-3-bottom', 1000))
-.add(fadeInTopBottom('#enfuce-3 #step-3-4-bottom', 1000))
+
+.add(blinkObject('#enfuce-3 #green-box-bottom', 1))
+
+.add(fadeInTopBottom('#enfuce-3 #step-3-1-bottom', 500))
+.add(fadeInTopBottom('#enfuce-3 #step-3-2-bottom', 500))
+.add(fadeInTopBottom('#enfuce-3 #step-3-3-bottom', 500))
+.add(fadeInTopBottom('#enfuce-3 #step-3-4-bottom', 500))
 
 .add({
 	targets: '#enfuce-3 #step-3-1-arrows',
 	opacity: [
 		{ value: 0, duration: 0 },
-		{ value: 1, duration: 500 }
+		{ value: 1, duration: 250 }
 	],
 	offset: '-=3000',
 	easing: 'linear',
@@ -301,7 +302,7 @@ thirdDiagramAnimation
 	targets: '#enfuce-3 #small-rectangle',
 	opacity: [
 		{ value: 0, duration: 0 },
-		{ value: 1, duration: 500 }
+		{ value: 1, duration: 250 }
 	],
 	offset: '-=3000',
 	easing: 'linear'
