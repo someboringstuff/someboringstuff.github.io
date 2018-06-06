@@ -264,18 +264,22 @@
 
 	@keyframes cursor {
 		0% {
-			transform: none;
-			opacity: 0;
-		}
-		0.1% {
-			transform: scale(1);
+			transform: translate(-100px, -200px) scale(1);
 			opacity: 1;
 		}
-		6% {
+		7% {
+			transform: translate(0px, -300px) scale(1);
+			opacity: 1;
+		}
+		17.3% {
+			transform: translate(300px, -250px) scale(1);
+			opacity: 1;
+		}
+		26% {
 			transform: translate(190.817px, -123.776px) scale(1);
 			opacity: 1;
 		}
-		25% {
+		45% {
 			transform: translate(190.817px, 100px) scale(.5) rotate(-130deg);
 			opacity: 0;
 		}
@@ -286,56 +290,59 @@
 
 
 	@keyframes blocking-left-lightnings {
-		0% {
+		20% {
 			transform: none;
 		}
-		4% {
-			transform: /* scale(1.1) */ rotate(-20deg);
+		23% {
+			transform: scale(1);
 		}
-		6.25% {
-			transform: /* scale(.95) */ rotate(-20deg) /* translate(10px, 20px) */;	
+		26.25% {
+			transform: scale(1.1);	
 		}
-		7.5% {
-			transform: /* scale(1.1) */ rotate(-20deg);	
+		28.5% {
+			transform: scale(1);	
 		}
-		11.4% {
+		31.4% {
 			transform: none;
 		}
 	}
 
 	@keyframes blocking-right-lightnings {
-		0% {
+		20% {
 			transform: none;
 		}
-		4% {
-			transform: /* scale(1.1) */ rotate(20deg);
+		23% {
+			transform: scale(1);
 		}
-		6.25% {
-			transform: /* scale(.95) */ rotate(20deg) /* translate(-10px, 20px) */;	
+		26.25% {
+			transform: scale(1.1);	
 		}
-		7.4% {
-			transform: /* scale(1.1) */ rotate(20deg);	
+		28.4% {
+			transform: scale(1);	
 		}
-		11.4% {
+		31.4% {
 			transform: none;
 		}
 	}
 
 	@keyframes blocking-lightnings {
 		0% {
-			fill: none;
+			opacity: 0;
 		}
-		0.1% {
-			fill: #FFFB40;	
+		20% {
+			opacity: 0;
 		}
-		11.4% {
-			fill: #FFFB40;
+		22.1% {
+			opacity: 1;	
 		}
-		11.5% {
-			fill: none;
+		31.4% {
+			opacity: 1;
+		}
+		32.5% {
+			opacity: 0;
 		}
 		100% {
-			fill: none;
+			opacity: 0;
 		}
 	}
 
@@ -343,34 +350,34 @@
 		0% {
 			transform: none;
 		}
-		12.5% {
+		32.5% {
 			transform: translateY(-10px);
 		}
-		16.65% {
+		36.65% {
 			transform: translateY(-10px) rotate(3deg);	
 		}
-		20.85% {
+		40.85% {
 			transform: translateY(-10px) rotate(-3deg);	
 		}
-		25% {
+		45% {
 			transform: translateY(-10px) rotate(3deg);	
 		}
-		29.15% {
+		49.15% {
 			transform: translateY(-10px) rotate(0deg);
 		}
-		33.3% {
+		53.3% {
 			transform: none;	
 		}
 	}
 
 	@keyframes blocking-shield {
-		3% {
+		23% {
 			transform: none;
 		}
-		6.25% {
+		26.25% {
 			transform: scale(1.1) rotate(-8deg) translate(-5px, -5px);
 		}
-		12.5% {
+		32.5% {
 			transform: none;
 		}
 	}
