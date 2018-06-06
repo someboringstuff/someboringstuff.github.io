@@ -247,7 +247,7 @@
 	}
 
 	#cursor {
-		animation: cursor 6s ease-in-out both infinite;
+		animation: cursor 6s linear both infinite;
 	}
 
 	#blocking-lightnings polygon {
@@ -264,15 +264,16 @@
 
 	@keyframes cursor {
 		0% {
-			transform: translate(-100px, -200px) scale(1);
-			opacity: 1;
+			transform: translate(400px, -250px) scale(1);
+			opacity: 0;
 		}
-		7% {
-			transform: translate(0px, -300px) scale(1);
-			opacity: 1;
+		12% {
+			transform: translate(400px, -250px) scale(1);
+			opacity: 0;
 		}
+		
 		17.3% {
-			transform: translate(300px, -250px) scale(1);
+			transform: translate(400px, -250px) scale(1);
 			opacity: 1;
 		}
 		26% {
@@ -347,7 +348,7 @@
 	}
 
 	@keyframes blocking-sword {
-		0% {
+		20% {
 			transform: none;
 		}
 		32.5% {
