@@ -247,7 +247,7 @@
 	}
 
 	#cursor {
-		animation: cursor 6s linear both infinite;
+		animation: cursor 12s linear both infinite;
 	}
 
 	#blocking-lightnings polygon {
@@ -267,20 +267,41 @@
 			transform: translate(400px, -250px) scale(1);
 			opacity: 0;
 		}
-		12% {
+		6% {
 			transform: translate(400px, -250px) scale(1);
 			opacity: 0;
 		}
 		
-		17.3% {
+		8.65% {
 			transform: translate(400px, -250px) scale(1);
 			opacity: 1;
 		}
-		26% {
+		13% {
 			transform: translate(190.817px, -123.776px) scale(1);
 			opacity: 1;
 		}
-		45% {
+		22.5% {
+			transform: translate(190.817px, 100px) scale(.5) rotate(130deg);
+			opacity: 0;
+		}
+		50% {
+			opacity: 0;
+		}
+
+		58% {
+			transform: translate(-120px, -60px) scale(1);
+			opacity: 0;
+		}
+		
+		58.65% {
+			transform: translate(-120px, -60px) scale(1);
+			opacity: 1;
+		}
+		63% {
+			transform: translate(190.817px, -123.776px) scale(1);
+			opacity: 1;
+		}
+		72.5% {
 			transform: translate(190.817px, 100px) scale(.5) rotate(-130deg);
 			opacity: 0;
 		}
