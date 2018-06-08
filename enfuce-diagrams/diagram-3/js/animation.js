@@ -135,7 +135,22 @@ thirdDiagramAnimation
 
 .add(fadeInTopBottom('#enfuce-3 #step-1-bottom', 1000))
 
-.add(fadeInTopBottom(['#enfuce-3 #step-1-1-bottom','#enfuce-3 #step-1-2-bottom','#enfuce-3 #step-1-3-bottom'], 1000))
+.add({
+	targets: ['#enfuce-3 #step-1-1-bottom','#enfuce-3 #step-1-2-bottom','#enfuce-3 #step-1-3-bottom'],
+	translateX: [
+		{ value: 0, duration: 1000, easing: 'easeOutQuart' }
+	],
+	translateY: [
+		{ value: 0, duration: 1000, easing: 'easeOutQuart' }
+	],
+	opacity: [
+		{ value: 0, duration: 0},
+		{ value: 1, duration: 1000, easing: 'linear'}
+	],
+	delay: function(target, index) {
+		return index * 500;
+	}
+})
 
 .add({
 	targets: '#enfuce-3 #step-1-4',
