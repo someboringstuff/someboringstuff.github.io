@@ -1,0 +1,150 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="phone-icon" x="0px" y="0px" viewBox="0 0 43.8 43.8" enable-background="new 0 0 43.8 43.8" xml:space="preserve">
+<g id="bcg">
+	<g style="transform-origin: 21.9px 21.9px 0px;">
+		<path id="red-circle" d="M21.9,5.9c-8.8,0-16,7.2-16,16c0,8.8,7.2,16,16,16s16-7.2,16-16C37.9,13.1,30.8,5.9,21.9,5.9z" style="transform-origin: 21.9px 21.9px 0px;"/>
+
+		<use id="op-circle-1" href="#red-circle" opacity="0.3" style="transform-origin: 21.9px 21.9px 0px;"/>
+	</g>
+</g>
+<g id="phone" style="transform-origin: 22.0081px 21.9532px 0px;">
+	
+		<rect x="26.4" y="24.4" transform="matrix(0.7879 -0.6158 0.6158 0.7879 -10.9778 22.793)" fill="#FFFFFF" width="2.4" height="5.9"/>
+	<path fill="#FFFFFF" d="M27.5,31.2l-3.6-4.6c0,0-2.4-0.6-4-2.7c-1.7-2.2-1.6-4.6-1.6-4.6l-3.6-4.6c0,0-3.4,4.9,2,11.8   S27.5,31.2,27.5,31.2z"/>
+	
+		<rect x="17.1" y="12.5" transform="matrix(0.7879 -0.6158 0.6158 0.7879 -5.6175 14.5322)" fill="#FFFFFF" width="2.4" height="5.9"/>
+</g>
+
+<style>
+	svg path {
+	    fill: inherit;
+	}
+
+	#phone * {
+		fill: #ffffff;
+	}
+
+	#phone {
+		-webkit-animation: phone-ring 1s ease-in-out both;
+		        animation: phone-ring 1s ease-in-out both;
+	}
+
+	#red-circle {
+		fill: #DD3444;
+	}
+
+	use#op-circle-1 {
+		-webkit-animation: op-scale-1 1s ease-in-out both;
+		        animation: op-scale-1 1s ease-in-out both;
+	}
+
+	@-webkit-keyframes op-scale-1 {
+	 	0% {
+	 		-webkit-transform: scale(1);
+	 		        transform: scale(1);
+	 	}
+	 	100% {
+	 		-webkit-transform: scale(1.5);
+	 		        transform: scale(1.5);
+	 		opacity: 0;
+	 	}
+	}
+
+	@keyframes op-scale-1 {
+	 	0% {
+	 		-webkit-transform: scale(1);
+	 		        transform: scale(1);
+	 	}
+	 	100% {
+	 		-webkit-transform: scale(1.5);
+	 		        transform: scale(1.5);
+	 		opacity: 0;
+	 	}
+	}
+
+	@-webkit-keyframes phone-ring {
+		0% {
+			-webkit-transform: rotate(0deg);
+			        transform: rotate(0deg);
+		}
+		10% {
+			-webkit-transform: rotate(3deg);
+			        transform: rotate(3deg);
+		}
+		20% {
+			-webkit-transform: rotate(-3deg);
+			        transform: rotate(-3deg);
+		}
+		30% {
+			-webkit-transform: rotate(3deg);
+			        transform: rotate(3deg);
+		}
+		40% {
+			-webkit-transform: rotate(-3deg);
+			        transform: rotate(-3deg);
+		}
+		50% {
+			-webkit-transform: rotate(3deg);
+			        transform: rotate(3deg);
+		}
+		60% {
+			-webkit-transform: rotate(-3deg);
+			        transform: rotate(-3deg);
+		}
+		70% {
+			-webkit-transform: rotate(3deg);
+			        transform: rotate(3deg);
+		}
+		80% {
+			-webkit-transform: rotate(-3deg);
+			        transform: rotate(-3deg);
+		}
+		90% {
+			-webkit-transform: rotate(0deg);
+			        transform: rotate(0deg);
+		}
+	}
+
+	@keyframes phone-ring {
+		0% {
+			-webkit-transform: rotate(0deg);
+			        transform: rotate(0deg);
+		}
+		10% {
+			-webkit-transform: rotate(3deg);
+			        transform: rotate(3deg);
+		}
+		20% {
+			-webkit-transform: rotate(-3deg);
+			        transform: rotate(-3deg);
+		}
+		30% {
+			-webkit-transform: rotate(3deg);
+			        transform: rotate(3deg);
+		}
+		40% {
+			-webkit-transform: rotate(-3deg);
+			        transform: rotate(-3deg);
+		}
+		50% {
+			-webkit-transform: rotate(3deg);
+			        transform: rotate(3deg);
+		}
+		60% {
+			-webkit-transform: rotate(-3deg);
+			        transform: rotate(-3deg);
+		}
+		70% {
+			-webkit-transform: rotate(3deg);
+			        transform: rotate(3deg);
+		}
+		80% {
+			-webkit-transform: rotate(-3deg);
+			        transform: rotate(-3deg);
+		}
+		90% {
+			-webkit-transform: rotate(0deg);
+			        transform: rotate(0deg);
+		}
+	}
+</style>
+</svg>
