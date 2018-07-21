@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 20.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="stickandrect" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+<rect id="background" fill="#262626" width="500" height="500"/>
+<g id="stick-rect">
+	<path id="rect" fill="#C05D38" d="M121,247H79c-2.2,0-4-1.8-4-4v-42c0-2.2,1.8-4,4-4h42c2.2,0,4,1.8,4,4v42
+		C125,245.2,123.2,247,121,247z"/>
+	
+		<line id="stick" fill="none" stroke="#E8D5C3" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10" x1="75" y1="250" x2="425" y2="250"/>
+</g>
+<g id="stick-lines">
+	<path fill="none" stroke="#E8D5C3" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M419.8,292.5
+		C400.8,368.6,332,425,250,425c-35.9,0-69.2-10.8-97-29.3"/>
+	<path fill="none" stroke="#E8D5C3" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M398.3,250
+		c0,81.9-66.4,148.3-148.3,148.3c-16.4,0-32.2-2.7-47-7.6"/>
+	<path fill="none" stroke="#E8D5C3" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M86.9,211.2
+		c19-76.1,87.8-132.5,169.8-132.5c8.5,0,16.8,0.6,25,1.8"/>
+</g>
+<g id="rect-lines">
+	<path fill="none" stroke="#C05D38" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M67.7,186.6
+		C93.9,111.1,165.6,57,250,57c9.2,0,18.2,0.8,27.1,1.9c9.1,1.1,20.1,3.9,20.1,3.9"/>
+	<path fill="none" stroke="#C05D38" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M46.7,175.8
+		C77,92.9,156.6,33.7,250,33.7c23.5,0,46.2,3.8,67.4,10.7"/>
+</g>
+
+
+<style>
+	#rect {
+		-webkit-animation: rect 2.5s ease-in-out both infinite;
+		        animation: rect 2.5s ease-in-out both infinite;
+	}
+
+	#stick-rect {
+		-webkit-transform-origin: 250px 250px;
+		    -ms-transform-origin: 250px 250px;
+		        transform-origin: 250px 250px;
+		-webkit-animation: stick-rect 2.5s cubic-bezier(0.68, -0.3, 0.265, 1.3) both infinite;
+		        animation: stick-rect 2.5s cubic-bezier(0.68, -0.3, 0.265, 1.3) both infinite;
+	}
+
+	#stick-lines path {
+		stroke-dasharray: 50, 500;
+		stroke-dashoffset: 100;
+		-webkit-animation: draw-stick-lines 2.5s linear both infinite;
+		        animation: draw-stick-lines 2.5s linear both infinite;
+	}
+
+	#rect-lines path {
+		stroke-dasharray: 40, 500;
+		stroke-dashoffset: 100;
+		-webkit-animation: draw-rect-lines 2.5s linear both infinite;
+		        animation: draw-rect-lines 2.5s linear both infinite;
+	}
+
+	@-webkit-keyframes draw-stick-lines {
+		0% {
+			stroke-dashoffset: 100;
+			opacity: .2;
+		}
+		23% {
+			stroke-dashoffset: 100;
+			opacity: .2;
+		}
+		42% {
+			stroke-dashoffset: -500;
+			opacity: 1;
+		}
+		100% {
+			stroke-dashoffset: -500;	
+		}
+	}
+
+	@keyframes draw-stick-lines {
+		0% {
+			stroke-dashoffset: 100;
+			opacity: .2;
+		}
+		23% {
+			stroke-dashoffset: 100;
+			opacity: .2;
+		}
+		42% {
+			stroke-dashoffset: -500;
+			opacity: 1;
+		}
+		100% {
+			stroke-dashoffset: -500;	
+		}
+	}
+
+	@-webkit-keyframes draw-rect-lines {
+		0% {
+			stroke-dashoffset: 100;
+			opacity: .2;
+		}
+		23% {
+			stroke-dashoffset: 100;
+			opacity: .2;
+		}
+		38% {
+			stroke-dashoffset: -400;
+			opacity: 1;
+		}
+		100% {
+			stroke-dashoffset: -400;	
+		}
+	}
+
+	@keyframes draw-rect-lines {
+		0% {
+			stroke-dashoffset: 100;
+			opacity: .2;
+		}
+		23% {
+			stroke-dashoffset: 100;
+			opacity: .2;
+		}
+		38% {
+			stroke-dashoffset: -400;
+			opacity: 1;
+		}
+		100% {
+			stroke-dashoffset: -400;	
+		}
+	}
+
+
+	@-webkit-keyframes stick-rect {
+		0% {
+			-webkit-transform: rotate(0deg);
+			        transform: rotate(0deg);
+		}
+		60% {
+			-webkit-transform: rotate(180deg);
+			        transform: rotate(180deg);
+		}
+		100% {
+			-webkit-transform: rotate(180deg);
+			        transform: rotate(180deg);	
+		}
+	}
+
+
+	@keyframes stick-rect {
+		0% {
+			-webkit-transform: rotate(0deg);
+			        transform: rotate(0deg);
+		}
+		60% {
+			-webkit-transform: rotate(180deg);
+			        transform: rotate(180deg);
+		}
+		100% {
+			-webkit-transform: rotate(180deg);
+			        transform: rotate(180deg);	
+		}
+	}
+
+	@-webkit-keyframes rect {
+		0% {
+			-webkit-transform: rotate(0deg);
+			        transform: rotate(0deg);
+			-webkit-transform-origin: 79px 250px;
+			        transform-origin: 79px 250px;
+		}
+		15% {
+			-webkit-transform: rotate(0deg);
+			        transform: rotate(0deg);	
+			-webkit-transform-origin: 79px 250px;	
+			        transform-origin: 79px 250px;
+		}
+		40% {
+			-webkit-transform: rotate(-270deg);
+			        transform: rotate(-270deg);
+			-webkit-transform-origin: 72px 250px;
+			        transform-origin: 72px 250px;
+		}
+		60% {
+			-webkit-transform: rotate(-270deg);
+			        transform: rotate(-270deg);
+			-webkit-transform-origin: 72px 250px;
+			        transform-origin: 72px 250px;
+		}
+		100% {
+			-webkit-transform: rotate(-270deg) translateY(-300px);
+			        transform: rotate(-270deg) translateY(-300px);
+			-webkit-transform-origin: 72px 250px;
+			        transform-origin: 72px 250px;	
+		}
+	}
+
+	@keyframes rect {
+		0% {
+			-webkit-transform: rotate(0deg);
+			        transform: rotate(0deg);
+			-webkit-transform-origin: 79px 250px;
+			        transform-origin: 79px 250px;
+		}
+		15% {
+			-webkit-transform: rotate(0deg);
+			        transform: rotate(0deg);	
+			-webkit-transform-origin: 79px 250px;	
+			        transform-origin: 79px 250px;
+		}
+		40% {
+			-webkit-transform: rotate(-270deg);
+			        transform: rotate(-270deg);
+			-webkit-transform-origin: 72px 250px;
+			        transform-origin: 72px 250px;
+		}
+		60% {
+			-webkit-transform: rotate(-270deg);
+			        transform: rotate(-270deg);
+			-webkit-transform-origin: 72px 250px;
+			        transform-origin: 72px 250px;
+		}
+		100% {
+			-webkit-transform: rotate(-270deg) translateY(-300px);
+			        transform: rotate(-270deg) translateY(-300px);
+			-webkit-transform-origin: 72px 250px;
+			        transform-origin: 72px 250px;	
+		}
+	}
+</style>
+</svg>
