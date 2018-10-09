@@ -7,7 +7,7 @@ body {
 
 svg {
 	width: 50%;
-  	margin: 100px 100px;
+  	margin: 150px 150px;
 }
 
 #first,#second,#third,#fourth,#fifth {
@@ -40,7 +40,7 @@ svg {
 }
 
 #first {
-	animation: reveal-triangle .7s cubic-bezier(0.59, 0.01, 0.15, 1.26) forwards;
+	animation: reveal-triangle .7s -0.1s cubic-bezier(0.59, 0.01, 0.15, 1.26) forwards;
 }
 
 #second {

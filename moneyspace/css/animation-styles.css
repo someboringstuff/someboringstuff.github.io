@@ -1,0 +1,96 @@
+/* HEADER IMAGE STYLES START */
+#header-image #left-hand {
+	transform-origin: 736px 447px;
+}
+
+#header-image #right-hand {
+	transform-origin: 758px 446px;
+}
+
+#header-image #vehicle {
+	transform-origin: 875px 502px;
+}
+
+#header-image #rocket {
+	transform-origin: 410px 389px;
+}
+
+#header-image #rocket-shadow {
+	transform-origin: 488px 473px;
+}
+
+#header-image #satellite {
+	transform-origin: 203px 332px;
+}
+
+#header-image #credit-card {
+	transform-origin: 725px 459px;
+}
+
+#header-image #coin {
+	transform-origin: 409px 397px;
+}
+
+/* HEADER IMAGE STYLES END */
+
+/* PAYMENT GATEWAY STYLES START */
+
+#payment-gateway #not-top {
+	transform-origin: 298px 135px;
+}
+
+#payment-gateway #not-bottom {
+	transform-origin: 298px 174px;
+}
+
+#payment-gateway #cb-left {
+	transform-origin: 342px 76px;
+}
+
+#payment-gateway #cb-right {
+	transform-origin: 362px 98.8px;
+}
+
+/* PAYMENT GATEWAY STYLES END */
+
+/* PAYMENT LINK STYLES START */
+
+#payment-link #circle-1, #payment-link #circle-2 {
+	transform-origin: 228px 235px;
+}
+
+#payment-link #chain-link {
+	transform-origin: 232.454px 144.586px;
+}
+
+/* PAYMENT LINK STYLES END */
+
+/* OFFLINE PAYMENT STYLES START */
+
+#offline-payment #interface, #offline-payment #light-shadow {
+	opacity: 0;
+}
+
+/* OFFLINE PAYMENT STYLES END */
+
+/* BIRD ICON STYLES START */
+
+#bird-icon #bird {
+	transform-origin: 38.218px 35.287px;
+}
+
+/* BIRD ICON STYLES END */
+
+/* SHIELDLOCK ICON STYLES START */
+#shieldlock-icon #shield {
+	transform-origin: 36.239px 39.405px;
+}
+/* SHIELDLOCK ICON STYLES END */
+
+/* SHOPBAG ICON STYLES START */
+
+#shopbag-icon #shopbag {
+	transform-origin: 34.502px 67.163px;
+}
+
+/* SHOPBAG ICON STYLES END */

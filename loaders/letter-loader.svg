@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 20.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="loader-letter" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 500 500" enable-background="new 0 0 500 500" xml:space="preserve">
+<rect fill="#262626" stroke="#000000" stroke-miterlimit="10" x="-500" y="-500" width="1500" height="1500"/>
+<g id="logo" style="transform-origin: 250px 250px 0px;">
+	<circle fill="none" stroke="#FFFFFF" stroke-width="3" stroke-miterlimit="10" cx="250" cy="250" r="56.5"/>
+	<g>
+		<circle id="el-1" fill="#FFFFFF" cx="240" cy="230" r="7.5"/>
+		<circle id="el-2" fill="#FFFFFF" cx="260" cy="230" r="7.5"/>
+		<circle id="el-3" fill="#FFFFFF" cx="240" cy="250" r="7.5"/>
+		<circle id="el-5" fill="#FFFFFF" cx="240" cy="270" r="7.5"/>
+		<circle id="el-4" fill="#FFFFFF" cx="260" cy="250" r="7.5"/>
+	</g>
+</g>
+
+
+<style>
+	#logo {
+		transform: scale(1.5);
+	}
+
+	#el-5 {
+		animation: el-5 3s cubic-bezier(0.175, 0.885, 0.32, 1.1) both infinite;
+	}
+
+	#el-3 {
+		animation: el-3 3s cubic-bezier(0.175, 0.885, 0.32, 1.1) both infinite;
+	}
+
+	#el-1 {
+		animation: el-1 3s cubic-bezier(0.175, 0.885, 0.32, 1.1) both infinite;
+	}
+
+	#el-2 {
+		animation: el-2 3s cubic-bezier(0.175, 0.885, 0.32, 1.1) both infinite;
+	}
+
+	#el-4 {
+		animation: el-4 3s cubic-bezier(0.175, 0.885, 0.32, 1.1) both infinite;
+	}
+
+	@keyframes el-5 {
+		0% {
+			transform: none;
+		}
+		12.5% {
+			transform: translate(20px, 0px);
+		}
+		62.5% {
+			transform: translate(20px, 0px);
+		}
+		75% {
+			transform: translate(20px, -20px);
+		}
+		100% {
+			transform: translate(20px, -20px);	
+		}
+	}
+
+	@keyframes el-3 {
+		12.5% {
+			transform: none;
+		}
+		25% {
+			transform: translate(0px, 20px);
+		}
+		100% {
+			transform: translate(0px, 20px);	
+		}
+	}
+
+	@keyframes el-1 {
+		25% {
+			transform: none;
+		}
+		37.5% {
+			transform: translate(0px, 20px);
+		}
+		100% {
+			transform: translate(0px, 20px);	
+		}
+	}
+
+	@keyframes el-2 {
+		37.5% {
+			transform: none;
+		}
+		50% {
+			transform: translate(-20px, 0px);
+		}
+		100% {
+			transform: translate(-20px, 0px);	
+		}
+	}
+
+	@keyframes el-4 {
+		50% {
+			transform: none;
+		}
+		62.5% {
+			transform: translate(0px, -20px);
+		}
+		100% {
+			transform: translate(0px, -20px);	
+		}
+	}
+</style>
+</svg>

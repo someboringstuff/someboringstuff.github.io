@@ -1,7 +1,10 @@
 svg {
-	height: 600px;
+	height: 100vh;
 }
 
+body {
+	text-align: center;
+}
 
 #match-arrow {
 	transform-origin: 535.11px 219.39px;

@@ -1,9 +1,9 @@
 (function() {
 
   const options = {
-    w: 126,
-    h: 126,
-    radius: 63,
+    w: 300,
+    h: 300,
+    radius: 150,
     bgC: "#eee",
     strC: "#000",
     startAngle: Math.PI/2

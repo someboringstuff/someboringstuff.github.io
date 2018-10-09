@@ -3,40 +3,34 @@
 <svg version="1.1" id="protection" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 598.1 431.7" style="enable-background:new 0 0 598.1 431.7;" xml:space="preserve">
 <style type="text/css">
-	.st0{opacity:0.7;fill:url(#SVGID_1_);}
-	.st1{fill:none;stroke:#F1C40F;stroke-width:19;stroke-miterlimit:10;}
-	.st2{fill:#F7F5E2;}
-	.st3{fill:none;stroke:#3D3E3F;stroke-width:4;stroke-miterlimit:10;}
-	.st4{fill:none;stroke:#F1C40F;stroke-width:9;stroke-linecap:round;stroke-miterlimit:10;}
-	.st5{fill:#FFFFFF;}
-	.st6{fill:#BCBEC0;}
-	.st7{fill:#3D3E3F;}
-	.st8{fill:#DEDFE0;enable-background:new    ;}
-	.st9{opacity:0.2;fill:#BCBEC0;enable-background:new    ;}
-	.st10{fill:#8D8D8E;}
-	.st11{fill:#F4E7E4;}
-	.st12{fill:#E29469;}
-	.st13{fill:none;stroke:#3D3E3F;stroke-width:4;stroke-linecap:round;stroke-miterlimit:10;}
-	.st14{fill:#6B4E44;}
-	.st15{fill:#966F5E;}
-	.st16{fill:#3190D4;}
-	.st17{fill:#E0B569;}
-	.st18{fill:#84AD53;}
-	.st19{fill:url(#fire-light_1_);}
-	.st20{fill:#956F5E;}
-	.st21{fill:#E7852B;}
-	.st22{fill:#E5512D;}
-	.st23{fill:#BCBDBF;}
-	.st24{fill:#E7852B;stroke:#3D3E3F;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	#protection .st0{opacity:0.7;fill:#71808F;}
+	#protection .st1{fill:none;stroke:#F1C40F;stroke-width:19;stroke-miterlimit:10;}
+	#protection .st2{fill:#F7F5E2;}
+	#protection .st3{fill:none;stroke:#3D3E3F;stroke-width:4;stroke-miterlimit:10;}
+	#protection .st4{fill:none;stroke:#F1C40F;stroke-width:9;stroke-linecap:round;stroke-miterlimit:10;}
+	#protection .st5{fill:#FFFFFF;}
+	#protection .st6{fill:#BCBEC0;}
+	#protection .st7{fill:#3D3E3F;}
+	#protection .st8{fill:#DEDFE0;enable-background:new    ;}
+	#protection .st9{opacity:0.2;fill:#BCBEC0;enable-background:new    ;}
+	#protection .st10{fill:#8D8D8E;}
+	#protection .st11{fill:#F4E7E4;}
+	#protection .st12{fill:#E29469;}
+	#protection .st13{fill:none;stroke:#3D3E3F;stroke-width:4;stroke-linecap:round;stroke-miterlimit:10;}
+	#protection .st14{fill:#6B4E44;}
+	#protection .st15{fill:#966F5E;}
+	#protection .st16{fill:#3190D4;}
+	#protection .st17{fill:#E0B569;}
+	#protection .st18{fill:#84AD53;}
+	#protection .st19{fill:url(#fire-light_1_);}
+	#protection .st20{fill:#956F5E;}
+	#protection .st21{fill:#E7852B;}
+	#protection .st22{fill:#E5512D;}
+	#protection .st23{fill:#BCBDBF;}
+	#protection .st24{fill:#E7852B;stroke:#3D3E3F;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 </style>
 <g id="night-sky">
-	
-		<radialGradient id="SVGID_1_" cx="299.05" cy="215.85" r="260.7893" gradientTransform="matrix(1.2256 0 0 1 -67.4721 0)" gradientUnits="userSpaceOnUse">
-		<stop  offset="0.5765" style="stop-color:#71808F"/>
-		<stop  offset="0.9931" style="stop-color:#71808F;stop-opacity:1.639605e-02"/>
-		<stop  offset="1" style="stop-color:#71808F;stop-opacity:0"/>
-	</radialGradient>
-	<rect x="-67.5" class="st0" width="733" height="431.7"/>
+	<rect class="st0" x="-500" width="1598.1" height="431.7"/>
 </g>
 <g id="sun">
 	<g>
@@ -610,11 +604,11 @@
 <style>
 	#fire-light {
 		animation: fire-light-movement .3s ease-in-out both infinite,
-				   sky-opacity 20s ease-in-out both infinite;
+				   sky-opacity 10s ease-in-out both infinite;
 	}
 
 	#night-sky {
-		animation: sky-opacity 20s ease-in-out both infinite;
+		animation: sky-opacity 10s ease-in-out both infinite;
 	}
 
 	#fire-1 {
@@ -635,11 +629,11 @@
 
 
 	#sun {
-		animation: sun-movement 20s ease-in-out both infinite;
+		animation: sun-movement 10s ease-in-out both infinite;
 	}
 
 	#moon {
-		animation: moon-movement 20s ease-in-out both infinite;	
+		animation: moon-movement 10s ease-in-out both infinite;	
 	}
 
 	#mustashe-1 {
