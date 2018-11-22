@@ -1,0 +1,219 @@
+/* SCALES STYLES START */
+
+#diagram-wrapper {
+	text-align: center;
+}
+
+#scales-animation {
+	width: 1190px;
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+#scales {
+	transform-origin: 1361.918px 374.961px;
+}
+
+#left-scale {
+	transform-origin: 771.148px 475.375px;
+}
+
+#right-scale {
+	transform-origin: 1941.1px 475.375px;
+}
+
+#weight-1 {
+	transform-origin: 1554.32px 1240.66px 0px;
+}
+
+#weight-2 {
+	transform-origin: 1725.44px 1240.66px 0px;
+}
+
+#weight-3 {
+	transform-origin: 1961.12px 1240.66px 0px;
+}
+
+#weight-4 {
+	transform-origin: 2255.84px 1240.66px 0px;
+}
+
+#weight-1:hover , #weight-2:hover , #weight-3:hover , #weight-4:hover, #close-button:hover, #risk-group:hover, #criticality-group:hover {
+	cursor: pointer;
+}
+
+#weight-1-fill, #weight-1-stroke, #weight-2-fill, #weight-2-stroke, #weight-3-fill, #weight-3-stroke, #weight-4-fill, #weight-4-stroke, #line-1-op, #line-2-op, #line-3-op, #line-4-op {
+	transition: all .2s ease-in-out;
+}
+
+#risk-popup, #criticality-popup {
+	opacity: 0;
+	transition: all .2s ease-in-out;
+}
+/* SCALES STYLES END */
+
+/* INFOGRAPHIC 2 STYLES START */
+
+#info2-animation [id*='step'] {
+	opacity: 0;
+}
+
+#info2-animation [id*='-fade'] {
+	transition: all .3s ease-in-out;
+}
+
+#info2-animation [id*='fade']:hover {
+	cursor: pointer;
+}
+
+#info2-animation {
+	width: 1190px;
+	max-width: 100%
+	margin: 0 auto;
+}
+
+/* INFOGRAPHIC 2 STYLES END */
+
+/* INFOGRAPHIC 3 STYLES START */
+
+#info3-animation {
+	width: 1190px;
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+/* INFOGRAPHIC 3 STYLES END */
+
+
+/* MODAL WINDOW STYLES START */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.52);
+}
+
+.modal-content {
+	display: none;
+}
+
+.close {
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	width: 32px;
+	height: 32px;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.close:before, .close:after {
+	position: absolute;
+	left: 15px;
+	content: ' ';
+	height: 30px;
+	width: 7px;
+	border-radius: 2px;
+	background-color: #CBD7E3;
+}
+.close:before {
+	transform: rotate(45deg);
+}
+.close:after {
+	transform: rotate(-45deg);
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    border: 6px solid #CBD7E3;
+    margin: 100px auto;
+    width: 600px;
+    padding: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    box-sizing: border-box;
+}
+
+.modal-title {
+	color: #788CA7;
+	margin: 0px;
+	padding-bottom: 8px;
+	font-family: 'Arial';
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+    font-size: 53px;
+    border-bottom: 1px solid #788CA7;
+    display: table-cell;
+}
+
+.modal-content > p {
+	text-align: left;
+	font-family: 'Arial';
+	font-style: normal;
+	font-variant: normal;
+	font-size: 19px;
+	line-height: 38px;
+	font-weight: 500;
+}
+
+@media screen and (max-width: 992px) {
+	.modal-content, #info2-animation .modal-content  {
+		width: 80%;	
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.modal-content, #info2-animation .modal-content  {
+		margin: 0;
+		padding: 35px;
+		width: 100%;	
+	}
+	.modal-content > p, #info2-animation .modal-content > p{
+		line-height: 32px;
+		font-size: 18px;	
+	}
+	.modal-title, #info2-animation .modal-title{
+		font-size: 45px;	
+	}
+}
+
+#info2-modal .modal-content {
+	width: 900px;
+}
+
+#info2-modal .modal-title {
+	color: #788CA7;
+	margin: 0px;
+	padding-bottom: 8px;
+	font-family: 'Arial';
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+    font-size: 22px;
+    border-bottom: 1px solid #788CA7;
+    display: table-cell;
+}
+
+#info2-modal .modal-content > p, #info2-modal .modal-content > ul {
+	text-align: left;
+	font-family: 'Arial';
+	font-style: normal;
+	font-variant: normal;
+	font-size: 14px;
+	line-height: 1.42857143;
+	font-weight: 500;
+}
+
+/* MODAL WINDOW STYLES END */
