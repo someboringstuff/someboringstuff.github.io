@@ -83,13 +83,18 @@
 				if (window.snowtimer) clearTimeout(snowtimer)
 				for (i=0; i<no; i++) document.getElementById("dot"+i).style.visibility="hidden"
 			}
+
+		function isMobileDevice() {
+		    return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+		};
 				
 
 		if (ie4up||ns6up){
-		    snowIE_NS6();
-				if (hidesnowtime>0)
-				setTimeout("hidesnow()", hidesnowtime*1000)
-				}
+			if(!isMobileDevice()) {
+				snowIE_NS6();
+				if (hidesnowtime>0) setTimeout("hidesnow()", hidesnowtime*1000);
+			}
+		}
 
 	</script>
 </body>
