@@ -84,13 +84,11 @@
 				for (i=0; i<no; i++) document.getElementById("dot"+i).style.visibility="hidden"
 			}
 
-		function isMobileDevice() {
-		    return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
-		};
+		var isMobile = navigator.userAgent.match(/(iPhone|iPod|iPad|Android|webOS|BlackBerry|IEMobile|Opera Mini)/i);
 				
 
 		if (ie4up||ns6up){
-			if(!isMobileDevice()) {
+			if(!isMobile) {
 				snowIE_NS6();
 				if (hidesnowtime>0) setTimeout("hidesnow()", hidesnowtime*1000);
 			}
