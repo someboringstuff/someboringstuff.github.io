@@ -14,6 +14,8 @@
 	<div id="snow"></div>
 
 	<script>
+		var isMobile = navigator.userAgent.match(/(iPhone|iPod|iPad|Android|webOS|BlackBerry|IEMobile|Opera Mini)/i);
+		
 		if(!isMobile) {
 			var snowsrc="logo-snow-animation.png"
 			var no = 15;
@@ -85,8 +87,6 @@
 				for (i=0; i<no; i++) document.getElementById("dot"+i).style.visibility="hidden"
 			}
 
-		var isMobile = navigator.userAgent.match(/(iPhone|iPod|iPad|Android|webOS|BlackBerry|IEMobile|Opera Mini)/i);
-		
 
 		if (ie4up||ns6up){
 			snowIE_NS6();
