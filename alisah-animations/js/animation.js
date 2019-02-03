@@ -15,15 +15,26 @@ iconAnimation1
 var iconAnimation2 = new TimelineMax({
 	repeat: -1,
 	repeatDelay: 1
-});
+}),
+	counter = { number: 0.0 };
 
 iconAnimation2
 .fromTo('#icon-2 #phone', 1, {y: -15, opacity: 0}, {y: 0, opacity: 1, ease: Sine.easeInOut})
 .to('#icon-2 #dark-screen', .7, {opacity: 0}, 1.1)
-.fromTo('#icon-2 #right-arm', .5, {rotation: '-105deg', svgOrigin: '91px 115px'}, {rotation: '0deg', svgOrigin: '91px 115px', ease: Power1.easeOut}, 2)
+.fromTo('#icon-2 #right-arm', .5, {rotation: '-105deg', svgOrigin: '91px 115px'}, {rotation: '0deg', svgOrigin: '91px 115px', ease: Power1.easeOut}, 1.7)
 .to('#icon-2 #right-arm', .15, {x: -2, y: -2, rotation: '-5deg', svgOrigin: '91px, 115px', ease: Sine.easeInOut, yoyo: true, repeat: 1}, 2.5)
 .to('#icon-2 #button', .1, {scale: 1.1, svgOrigin: '71.5px, 93.5px', ease: Sine.easeInOut, yoyo: true, repeat: 1}, 2.65)
-.to('#icon-2 #phone', 1, {opacity: 0}, 4)
+.fromTo('#icon-2 #tent-and-distance', .5, {opacity: 0}, {opacity: 1}, 2.65)
+.to(counter, 2, {
+      number: 2.3, 
+      onUpdate: function () {
+      	if(document.querySelectorAll('#icon-2 #distance')[0]) {
+          document.querySelectorAll('#icon-2 #distance')[0].innerHTML = counter.number.toFixed(1);
+      	}
+      },
+      ease:Circ.easeOut
+  }, 2.65)
+.to('#icon-2 #phone', 1, {opacity: 0}, 7)
 .to('#icon-2 #right-arm', 1, {x: 0, y: 0, rotation: '-105deg', svgOrigin: '91px 115px', ease: Sine.easeInOut}, 3);
 
 var iconAnimation3 = new TimelineMax({
@@ -36,16 +47,8 @@ iconAnimation3
 .fromTo('#icon-3 #text-bubble', 1, {rotation:'90deg', scale: 0, opacity: 0, svgOrigin: '146.66px 99.79px'}, {rotation:'0deg', scale: 1, opacity: 1,	ease: Elastic.easeOut.config(1, 1),	svgOrigin: '146.55px 99.79px'}, .7)
 .to('#icon-3 #right-arm', .4, {rotation: '15deg', yoyo: true, repeat: 1, svgOrigin: '123.9px 150.3px'}, .7)
 .to('#icon-3 #left-arm', .4, {rotation: '-15deg', yoyo: true, repeat: 1, svgOrigin: '136.5px 153.1px'}, .7)
-//drone start
-.to('#icon-3 #drone', 2, {y: -40}, 0)
-.to('#icon-3 #drone', .6, {y: -37})
-.to('#icon-3 #drone', .6, {y: -40})
-.to('#icon-3 #drone', .6, {y: -37})
-.to('#icon-3 #drone', .6, {y: -40})
-.to('#icon-3 #drone', 2, {y: 0})
-//drone end
+.to('#icon-3 #tent-glow', .3, {opacity: .5, repeat: 3, yoyo: true})
 .to(['#icon-3 #woman, #icon-3 #text-bubble'], 1, { opacity: 0}, 4.5);
-
 
 var iconAnimation4 = new TimelineMax({
 	repeat: -1,
@@ -71,6 +74,13 @@ iconAnimation5
 .fromTo('#icon-5 #woman .right-arm', .5, {rotation: '-20deg', svgOrigin: '175px 121px'}, {rotation: '0deg', svgOrigin: '175px 121px'}, 1.8)
 .fromTo('#icon-5 #man .right-arm', .2, {x: 0, y: 0, svgOrigin: '152px 130px'}, {rotation: '4deg', x: .5, y: .5, repeat: 3, yoyo: true, ease: Sine.easeInOut, svgOrigin: '152px 130px'}, 2.5)
 .fromTo('#icon-5 #woman .right-arm', .2, {x: 0, y: 0, svgOrigin: '175px 121px'}, {rotation: '-4deg', x: -.5, y: .5, repeat: 3, yoyo: true, ease: Sine.easeInOut, svgOrigin: '175px 121px'}, 2.5)
+
+.fromTo('#icon-5 #text-bubble-1', 1, {rotation:'90deg', scale: 0, opacity: 0, svgOrigin: '153.79px 105.7px'}, { rotation:'0deg', scale: 1, opacity: 1,	ease: Elastic.easeOut.config(1, 1),	svgOrigin: '153.79px 105.7px'})
+.to('#icon-5 #text-bubble-1', .3, {opacity: 0}, '+=.5')
+
+.fromTo('#icon-5 #text-bubble-2', 1, {rotation:'-90deg', scale: 0, opacity: 0, svgOrigin: '171.08px 105.69px'}, { rotation:'0deg', scale: 1, opacity: 1,	ease: Elastic.easeOut.config(1, 1),	svgOrigin: '171.08px 105.69px'})
+.to('#icon-5 #text-bubble-2', .3, {opacity: 0}, '+=.5')
+
 .to('#icon-5 #man, #icon-5 #woman', 1, {opacity: 0}, '+=1')
 
 var iconAnimation6 = new TimelineMax({
@@ -80,8 +90,8 @@ var iconAnimation6 = new TimelineMax({
 
 iconAnimation6
 .fromTo('#icon-6 #floating-logo', 3, {y: -5}, {y: -12, repeat: -1, yoyo: true, ease: Sine.easeInOut})
-.to('#icon-6 .left-arm', 1, {rotation: '10deg'}, 0)
-.to('#icon-6 .right-arm', 1, {rotation: '-10deg'}, 0)
+.to('#icon-6 .left-arm', 1, {rotation: '10deg', repeat: -1, yoyo: true}, 0)
+.to('#icon-6 .right-arm', 1, {rotation: '-10deg', repeat: -1, yoyo: true}, 0)
 
 
 document.querySelectorAll("#icon-6 .left-arm").forEach(function(el) {
@@ -94,10 +104,10 @@ document.querySelectorAll("#icon-6 .left-arm").forEach(function(el) {
     console.log(el.id + ': ' + el.style.transformOrigin);
 });
 
-document.querySelectorAll("#icon-6 .left-arm").forEach(function(el) {
+document.querySelectorAll("#icon-6 .right-arm").forEach(function(el) {
     bbox = el.getBBox();
     center = {
-        x: bbox.x + bbox.width - 5,
+        x: bbox.x + bbox.width,
         y: bbox.y + bbox.height
     };
     el.setAttribute('data-svg-origin', center.x + "px " + center.y + "px");
