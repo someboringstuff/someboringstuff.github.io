@@ -1,3 +1,10 @@
+function randomFloatBetween(minValue,maxValue,precision){
+    if(typeof(precision) == 'undefined'){
+        precision = 2;
+    }
+    return parseFloat(Math.min(minValue + (Math.random() * (maxValue - minValue)),maxValue).toFixed(precision));
+}
+
 var iconAnimation1 = new TimelineMax({
 	repeat: -1,
 	repeatDelay: 1
@@ -39,7 +46,7 @@ iconAnimation2
 
 var iconAnimation3 = new TimelineMax({
 	repeat: -1,
-	repeatDelay: 1
+	repeatDelay: 1.5
 });
 
 iconAnimation3
@@ -47,8 +54,10 @@ iconAnimation3
 .fromTo('#icon-3 #text-bubble', 1, {rotation:'90deg', scale: 0, opacity: 0, svgOrigin: '146.66px 99.79px'}, {rotation:'0deg', scale: 1, opacity: 1,	ease: Elastic.easeOut.config(1, 1),	svgOrigin: '146.55px 99.79px'}, .7)
 .to('#icon-3 #right-arm', .4, {rotation: '15deg', yoyo: true, repeat: 1, svgOrigin: '123.9px 150.3px'}, .7)
 .to('#icon-3 #left-arm', .4, {rotation: '-15deg', yoyo: true, repeat: 1, svgOrigin: '136.5px 153.1px'}, .7)
-.to('#icon-3 #tent-glow', .3, {opacity: .5, repeat: 3, yoyo: true})
+.to('#icon-3 #tent-glow', .4, {opacity: .5, repeat: 3, yoyo: true}, 1.4)
 .to(['#icon-3 #woman, #icon-3 #text-bubble'], 1, { opacity: 0}, 4.5);
+
+TweenMax.fromTo('#icon-3 #drone', 1, {y: -55}, {y: -60, repeat: -1, yoyo: true, ease: Sine.easeInOut});
 
 var iconAnimation4 = new TimelineMax({
 	repeat: -1,
@@ -88,28 +97,36 @@ var iconAnimation6 = new TimelineMax({
 	repeatDelay: 1
 });
 
+
+for (var i = 0; i < 8; i++) {
+	TweenMax.to('#icon-6 #person-' + i + ' .left-arm', randomFloatBetween(0.8, 1.5, 2), {rotation: '10deg', repeat: -1, yoyo: true, ease: Sine.easeInOut}, 0);
+	TweenMax.to('#icon-6 #person-' + i + ' .right-arm', randomFloatBetween(0.8, 1.5, 2), {rotation: '-10deg', repeat: -1, yoyo: true, ease: Sine.easeInOut}, 0);
+	TweenMax.to('#icon-6 #person-' + i + ' .left-forearm', randomFloatBetween(0.8, 1.5, 2), {rotation: '-15deg', repeat: -1, yoyo: true, ease: Sine.easeInOut}, 0)
+	TweenMax.to('#icon-6 #person-' + i + ' .right-forearm', randomFloatBetween(0.8, 1.5, 2), {rotation: '15deg', repeat: -1, yoyo: true, ease: Sine.easeInOut}, 0)
+}
+
 iconAnimation6
 .fromTo('#icon-6 #floating-logo', 3, {y: -5}, {y: -12, repeat: -1, yoyo: true, ease: Sine.easeInOut})
-.to('#icon-6 .left-arm', 1, {rotation: '10deg', repeat: -1, yoyo: true}, 0)
-.to('#icon-6 .right-arm', 1, {rotation: '-10deg', repeat: -1, yoyo: true}, 0)
+.fromTo('#icon-6 #drone', 1.5, {y: -5}, {y: -12, repeat: -1, yoyo: true, ease: Sine.easeInOut}, 0)
+.fromTo('#icon-6 #dog-tail', 1, {rotation: '-10deg', svgOrigin: '59.56px 182.5px'}, {rotation: '0deg', svgOrigin: '59.56px 182.5px', repeat: -1, yoyo: true, ease: Sine.easeInOut}, 0)
 
 
-document.querySelectorAll("#icon-6 .left-arm").forEach(function(el) {
+
+
+document.querySelectorAll("#icon-6 .left-arm, #icon-6 .left-forearm").forEach(function(el) {
     bbox = el.getBBox();
     center = {
         x: bbox.x,
-        y: bbox.y + bbox.height
+        y: bbox.y + bbox.height - 3
     };
     el.setAttribute('data-svg-origin', center.x + "px " + center.y + "px");
-    console.log(el.id + ': ' + el.style.transformOrigin);
 });
 
-document.querySelectorAll("#icon-6 .right-arm").forEach(function(el) {
+document.querySelectorAll("#icon-6 .right-arm, #icon-6 .right-forearm").forEach(function(el) {
     bbox = el.getBBox();
     center = {
-        x: bbox.x + bbox.width,
+        x: bbox.x + bbox.width - 5,
         y: bbox.y + bbox.height
     };
     el.setAttribute('data-svg-origin', center.x + "px " + center.y + "px");
-    console.log(el.id + ': ' + el.style.transformOrigin);
 });
